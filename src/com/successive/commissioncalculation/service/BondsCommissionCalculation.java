@@ -22,5 +22,6 @@ public class BondsCommissionCalculation implements CommissionCalculation{
     return (quantity * securityPrice)*(0.01/100);
   }
   
+  
 
 }
