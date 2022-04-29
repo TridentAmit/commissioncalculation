@@ -12,5 +12,6 @@ public class CommissionCalculationController {
     Function<Trade, Trade> func = validator::validateTrade;
     CompletionStage.thenApplyAsync(func);
     
+    
   }
 }
