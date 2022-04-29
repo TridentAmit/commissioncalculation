@@ -2,6 +2,12 @@ package com.successive.commissioncalculation.validator;
 
 import com.successive.commissioncalculation.model.Trade;
 
+/**
+ * This class validates the request for correct input set in Trade object
+ * 
+ * @author amitkumar
+ *
+ */
 public class RequestValidator {
   public Trade validateTrade(Trade trade) {
     if(!("STO".equalsIgnoreCase(trade.getSecurityType()) || "BON".equalsIgnoreCase(trade.getSecurityType()) || "FX".equalsIgnoreCase(trade.getSecurityType()))) {

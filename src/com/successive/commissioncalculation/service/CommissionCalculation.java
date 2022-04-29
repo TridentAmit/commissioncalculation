@@ -9,5 +9,10 @@ import com.successive.commissioncalculation.model.Trade;
  *
  */
 public interface CommissionCalculation {
-  public String getCommissionAmount(Trade trade); 
+  /**
+   * This method calculates commission amount based on trade input
+ * @param trade
+ * @return
+ */
+public String getCommissionAmount(Trade trade); 
 }
