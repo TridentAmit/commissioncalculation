@@ -21,6 +21,13 @@ public class CommissionCalculationController {
    */
   private ExecutorService executors = Executors.newFixedThreadPool(4);
 
+  /**
+   * This method is entry point for calculating commission amount.
+   * This method supports asynchronous calls and uses CompletableFuture and executor service 
+   * 
+   * @param trades
+   * @return
+   */
   public CompletableFuture<List<String>> getCommissionAmount(final List<Trade> trades) {
     final CommissionCalculationService service = new CommissionCalculationService();
 

@@ -11,6 +11,10 @@ import com.successive.commissioncalculation.model.Trade;
  * This class is main class of this application, Which would act as entry point for this
  * application.
  * 
+ * This application supports asynchronous call, 
+ * and uses CompletableFuture and Executor service,
+ * All the calculation of commission is happening in parallel.
+ * 
  * @author amitkumar
  *
  */
